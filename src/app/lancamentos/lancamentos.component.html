@@ -1,0 +1,24 @@
+<h4> Lançamentos </h4>
+<br>
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">Origem</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Valor Gasto</th>
+            <th scope="col">Mês</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let item of itemsDespesas">
+        <tr>
+            <td> {{ item.origem }} </td>
+            <td> {{ getDescriptionCategory(item.categoria) }} </td>
+            <td> {{ formatValue(item.valor) }} </td>
+            <td> {{ formatMonth(item.mes_lancamento) }} </td>
+        </tr>
+    </tbody>
+</table>
+
+<div *ngIf="itemsDespesas.length <= 0">
+    <h4>Não há dados a serem exibidos</h4>
+</div>

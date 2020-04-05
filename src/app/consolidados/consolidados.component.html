@@ -1,0 +1,20 @@
+<h4> Valores Consolidados </h4>
+<br>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Mês</th>
+            <th scope="col">Total Gasto</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let item of totalMonths">
+        <tr>
+            <td> {{ formatMonth(item.mes) }} </td>
+            <td> {{ formatValue(item.valor) }} </td>
+        </tr>
+    </tbody>
+</table>
+
+<div *ngIf="totalMonths.length <= 0">
+    <h4>Não há dados a serem exibidos</h4>
+</div>
