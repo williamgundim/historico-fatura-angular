@@ -11,10 +11,10 @@
     </thead>
     <tbody *ngFor="let item of itemsDespesas">
         <tr>
-            <td> {{ item.origem }} </td>
-            <td> {{ getDescriptionCategory(item.categoria) }} </td>
-            <td> {{ formatValue(item.valor) }} </td>
-            <td> {{ formatMonth(item.mes_lancamento) }} </td>
+            <td> {{ item?.origem }} </td>
+            <td> {{ getDescriptionCategory(item?.categoria) }} </td>
+            <td> {{ formatValue(item?.valor) }} </td>
+            <td> {{ formatMonth(item?.mes_lancamento) }} </td>
         </tr>
     </tbody>
 </table>

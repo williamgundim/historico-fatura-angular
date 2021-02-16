@@ -3,7 +3,9 @@ import { Subscription } from 'rxjs';
 import { HttpErrorResponse } from '@angular/common/http';
 
 import { LancamentoService } from '../util/lancamento.service';
-import { Despesas, MonthDescription, Categoria } from '../util/despesas';
+import { Despesas, Categoria } from '../util/despesas';
+import { formatMonth, formatValue} from '../util/util'
+
 
 @Component({
   selector: 'ap-lancamentos',
@@ -54,7 +56,7 @@ export class LancamentosComponent implements OnInit, OnDestroy, OnChanges {
    * @return exemplo: R$ 102,00 
    */
   formatValue(nValue:number){
-    return nValue.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+    return formatValue(nValue);
   }
 
   /** formatMonth
@@ -63,7 +65,7 @@ export class LancamentosComponent implements OnInit, OnDestroy, OnChanges {
    * @return description
    */
   formatMonth(nMonth:number){
-    return MonthDescription(nMonth);
+    return formatMonth(nMonth);
   }
 
   /** getDescriptionCategory
