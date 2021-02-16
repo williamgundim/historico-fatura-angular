@@ -13,7 +13,7 @@ import { Despesas, compareMonths } from './util/despesas';
 export class AppComponent  implements OnInit{
 
   subs: Subscription;
-  itemsDespesas: Despesas[] = [];
+  itemsDespesas: Despesas[];
 
   constructor(
     private lancamentoService: LancamentoService) {

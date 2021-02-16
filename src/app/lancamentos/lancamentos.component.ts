@@ -32,10 +32,7 @@ export class LancamentosComponent implements OnInit, OnDestroy, OnChanges {
     .getCategory()
     .subscribe(categorias => {
       this.categoryValues = categorias;
-    },
-    (error:HttpErrorResponse) => {
-      console.log(error.message)
-    })
+    });
 
   }
 
