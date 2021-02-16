@@ -1,7 +1,9 @@
+import { FormatWidth } from '@angular/common';
 import { Component, OnDestroy, SimpleChanges, Input, OnChanges } from '@angular/core';
 import { Subscription } from 'rxjs';
 
-import { Despesas,MonthDescription, TotalConsolidado } from '../util/despesas';
+import { Despesas,MonthDescription, TotalConsolidado } from '../../util/despesas';
+import { formatValue, formatMonth } from '../../util/util'
 
 @Component({
   selector: 'ap-consolidados',
@@ -63,7 +65,7 @@ export class ConsolidadosComponent implements OnDestroy, OnChanges {
   * @return exemplo: R$ 102,00 
   */
   formatValue(nValue:number){
-    return nValue.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+    return formatValue(nValue);
   }
 
   /** formatMonth
@@ -72,7 +74,7 @@ export class ConsolidadosComponent implements OnDestroy, OnChanges {
    * @return description
    */
   formatMonth(nMonth:number){
-    return MonthDescription(nMonth);
+    return formatMonth(nMonth);
   }
 
 }

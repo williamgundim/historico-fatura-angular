@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { HttpErrorResponse } from '@angular/common/http';
 
 import { LancamentoService } from './util/lancamento.service';
 import { Despesas, compareMonths } from './util/despesas';
@@ -26,9 +25,6 @@ export class AppComponent  implements OnInit{
       .subscribe(despesas => {
         this.itemsDespesas = despesas;
         this.itemsDespesas.sort(compareMonths);
-      },
-      (error:HttpErrorResponse) => {
-        console.log(error.message)
       })
     }
 }

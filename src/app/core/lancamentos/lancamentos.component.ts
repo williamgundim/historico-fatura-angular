@@ -2,9 +2,9 @@ import { Component, OnInit, OnDestroy, Input, OnChanges, SimpleChanges } from '@
 import { Subscription } from 'rxjs';
 import { HttpErrorResponse } from '@angular/common/http';
 
-import { LancamentoService } from '../util/lancamento.service';
-import { Despesas, Categoria } from '../util/despesas';
-import { formatMonth, formatValue} from '../util/util'
+import { LancamentoService } from '../../util/lancamento.service';
+import { Despesas, Categoria } from '../../util/despesas';
+import { formatMonth, formatValue} from '../../util/util'
 
 
 @Component({

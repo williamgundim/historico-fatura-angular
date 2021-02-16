@@ -4,18 +4,17 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LancamentosComponent } from './lancamentos/lancamentos.component';
-import { ConsolidadosComponent } from './consolidados/consolidados.component'
+import { CoreModule } from './core/core.module'
 
 @NgModule({
   declarations: [
-    AppComponent, 
-    LancamentosComponent, ConsolidadosComponent
+    AppComponent 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
