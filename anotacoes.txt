@@ -1,0 +1,38 @@
+Os testes unitários são executados em ordem aleatoria para garantir que não possui nenhuma dependencia entre um teste e outro.
+
+Colocar F na frente do describe ou fo it para executar apenas aquele teste unitário.
+
+Comando: ng test --code-coverage
+para gerar pasta /coverage com a cobertura de testes de cada arquivo
+
+afterEach
+BeforeEach
+
+TestBed - Utilizado para configurar e inicializar todas as dependencias necessárias para o teste unitário.
+
+Dentro do TestBed para componentes nós utilizamos o declarations. Para serviços precisamos usar o providers.
+
+O componente no angular é uma composição do template html e do typescript.
+
+Jasmine - Framework de testes que o angular utiliza, não são exclusivos do angular. Podem ser utilizados para outros projetos javascript.
+Karma - Executor dos testes.
+
+https://jasmine.github.io/
+
+Fontes de exemplo: 
+https://github.com/williamgundim
+
+Testes de funções 
+	despesas.ts
+	util.ts
+	
+Testes de componente
+	lancamentos.component
+	consolidados.component
+	
+Testes de serviços com requisição HTTP
+	lancamento.service.ts
+
+
+
+
