@@ -2,7 +2,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SimpleChange } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
-import { Categoria, Despesas } from '../../util/despesas';
+import { Categoria, Despesas } from '../../util/util';
 import { LancamentoService } from '../../util/lancamento.service';
 
 import { LancamentosComponent } from './lancamentos.component';

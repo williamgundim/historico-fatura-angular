@@ -14,7 +14,7 @@ Dentro do TestBed para componentes nós utilizamos o declarations. Para serviço
 
 O componente no angular é uma composição do template html e do typescript.
 
-Jasmine - Framework de testes que o angular utiliza, não são exclusivos do angular. Podem ser utilizados para outros projetos javascript.
+Jasmine - Framework de testes que utilizamos no nosso projeto angular mas ele não é exclusivos do angular, não foi desenvolvido pelo angular. Ele pode ser utilizado para projetos em node, python, ruby...
 Karma - Executor dos testes.
 
 https://jasmine.github.io/

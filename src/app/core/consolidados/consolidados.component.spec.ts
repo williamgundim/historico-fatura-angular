@@ -1,6 +1,6 @@
 import { SimpleChange } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { Despesas } from 'src/app/util/despesas';
+import { Despesas } from 'src/app/util/util';
 
 import { ConsolidadosComponent } from './consolidados.component';
 
