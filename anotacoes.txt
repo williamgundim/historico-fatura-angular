@@ -23,7 +23,6 @@ Fontes de exemplo:
 https://github.com/williamgundim
 
 Testes de funções 
-	despesas.ts
 	util.ts
 	
 Testes de componente

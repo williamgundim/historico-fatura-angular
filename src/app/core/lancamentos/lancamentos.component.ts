@@ -1,6 +1,5 @@
 import { Component, OnInit, OnDestroy, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { HttpErrorResponse } from '@angular/common/http';
 
 import { LancamentoService } from '../../util/lancamento.service';
 import { Despesas, Categoria } from '../../util/util';

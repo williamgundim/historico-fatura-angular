@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { LancamentoService } from './util/lancamento.service';
-import { Despesas, compareMonths } from './util/despesas';
+import { Despesas, compareMonths } from './util/util';
 
 @Component({
   selector: 'app-root',

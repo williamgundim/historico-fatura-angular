@@ -4,7 +4,13 @@ describe('Testes para funções util.ts', ()=> {
   
   it('Deve formatar o valor em Real', ()=> {
 
-    expect(formatValue(103)).toContain('R$');
+    let value: string = '';
+
+    //Execução.
+    value = formatValue(103);
+
+    //Avaliação.
+    expect(value).toContain('R$');
     
   });
 
@@ -28,6 +34,7 @@ describe('Testes para funções util.ts', ()=> {
 
 it('Deve ordenar corretamento os meses', ()=>{
 
+    //Preparação.
     let despesa_combustivel:Despesas = {
         categoria: 1,
         id:990,

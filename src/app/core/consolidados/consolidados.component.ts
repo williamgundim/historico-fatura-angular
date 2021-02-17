@@ -2,7 +2,7 @@ import { FormatWidth } from '@angular/common';
 import { Component, OnDestroy, SimpleChanges, Input, OnChanges } from '@angular/core';
 import { Subscription } from 'rxjs';
 
-import { Despesas,MonthDescription, TotalConsolidado } from '../../util/despesas';
+import { Despesas, TotalConsolidado } from '../../util/util';
 import { formatValue, formatMonth } from '../../util/util'
 
 @Component({

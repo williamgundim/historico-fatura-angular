@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Despesas,Categoria } from './despesas';
+import { Despesas,Categoria } from './util';
 import { Injectable } from '@angular/core';
 
 const API = 'https://desafio-it-server.herokuapp.com';

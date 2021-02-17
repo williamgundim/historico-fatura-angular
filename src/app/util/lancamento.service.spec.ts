@@ -1,6 +1,6 @@
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { TestBed } from "@angular/core/testing";
-import { Categoria, Despesas } from "./despesas";
+import { Categoria, Despesas } from "./util";
 import { LancamentoService } from "./lancamento.service";
 
 describe('LancamentoService', ()=>{
